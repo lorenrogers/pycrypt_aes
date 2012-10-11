@@ -1,3 +1,6 @@
+import os, random, struct
+from Crypto.Cipher import AES
+
 def encrypt_file(key, in_filename, out_filename=None, chunksize=64*1024):
     """ Encrypts a file using AES (CBC mode) with the
         given key.
